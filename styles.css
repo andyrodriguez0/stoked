@@ -11,8 +11,8 @@ header {
     display: flex;
     align-items: center;
     padding: 10px;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     background-color: rgb(235, 226, 205);
 }
 
