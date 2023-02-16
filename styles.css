@@ -16,7 +16,6 @@ header {
     color: rgb(255, 250, 237);
     box-shadow: 0 5px 10px rgb(210, 210, 210);
     position: fixed;
-    margin: 0;
     top: 0;
 }
 
@@ -51,7 +50,7 @@ a:hover {
     padding: 10px;
     margin: 50px 10px;
     margin-top: 120px;
-    box-shadow: 5px 5px 10px rgb(210, 210, 210);
+    box-shadow: 5px 5px 10px rgb(170, 170, 170);
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('images/bowl.png');
     background-size: cover;
 }
@@ -63,11 +62,16 @@ a:hover {
 #introduction-all {
     width: 80%;
     font-size: 1.5rem;
-    color: white;
+    color:rgb(255, 250, 237);
 }
 
 #introduction-text {
-    margin-top: 100px;
+    margin-top: 50px;
+    font-size: 1rem;
+}
+
+#introduction-text > h2{
+    margin-top: 50px;
 }
 
 #fulfillment {
