@@ -14,15 +14,17 @@ header {
     color: rgb(255, 250, 237);
     background-color: rgb(255, 142, 0);
     box-shadow: 0 5px 10px rgb(210, 210, 210);
+    font-size: 16px;
 }
 
 #logo {
     width: 7%;
+    min-width: 100px;
     margin-left: 3rem;
 }
 
 #nav-bar {
-    font-size: 1rem;
+    font-size: 1em;
     display: flex;
     gap: 1rem;
     margin-left: auto;
@@ -88,6 +90,7 @@ a:hover {
 
 #pyramid {
     width: 50%;
+    min-width: 200px;
 }
 
 #who-we-are-content {
@@ -121,7 +124,7 @@ button {
     color:rgb(255, 250, 237);
     background-color: rgb(255, 142, 0);
     height: 50px;
-    width: 10%;
+    width: 150px;
     font-size: 1rem;
     border: 0;
 }
