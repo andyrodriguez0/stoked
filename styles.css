@@ -50,7 +50,7 @@ a:hover {
     box-shadow: 5px 5px 10px rgb(170, 170, 170);
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('images/bowl.png');
     background-size: cover;
-    font-size: 1.5rem;
+    font-size: 24px;
     color:rgb(255, 250, 237);
 }
 
@@ -64,7 +64,7 @@ a:hover {
 
 #our-mission-text {
     margin-top: 50px;
-    font-size: 1rem;
+    font-size: 0.75em;
 }
 
 #our-mission-footer {
