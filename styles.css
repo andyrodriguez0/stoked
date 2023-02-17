@@ -1,6 +1,6 @@
 
 html {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 header {
@@ -20,7 +20,6 @@ header {
 #logo {
     width: 7%;
     min-width: 100px;
-    margin-left: 3rem;
 }
 
 #nav-bar {
@@ -28,7 +27,7 @@ header {
     display: flex;
     gap: 1rem;
     margin-left: auto;
-    margin-right: 3rem;
+    margin-right: 2rem;
 }
 
 a {
@@ -88,6 +87,13 @@ a:hover {
     box-shadow: 5px 5px 10px rgb(170, 170, 170);
 }
 
+#pyramid-div {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+}
+
 #pyramid {
     width: 50%;
     min-width: 200px;
@@ -111,6 +117,7 @@ a:hover {
     justify-content: space-evenly;
     align-items: center;
     margin: 20px;
+    margin-bottom: 75px;;
     font-size: 24px;
     text-align: center;
     color: rgb(64, 64, 64);
@@ -127,6 +134,33 @@ button {
     width: 150px;
     font-size: 1rem;
     border: 0;
+}
+
+#footer {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    color: rgb(64, 64, 64);
+    background-color: rgb(234, 226, 205);
+}
+
+#footer-content {
+    text-align: center;
+}
+
+#footer-logo {
+    width: 7%;
+    min-width: 100px;
+    margin: 25px 0;
+}
+
+#email-logo {
+    width: 3%;
+    min-width: 50px;
+    margin: 0;
 }
 
 .fade-in-text {
