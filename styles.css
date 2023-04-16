@@ -1,133 +1,69 @@
 
 html {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-header {
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
+.header-footer {
     display: flex;
     align-items: center;
     padding: 10px;
-    color: rgb(255, 250, 237);
-    background-color: rgb(255, 142, 0);
-    box-shadow: 0 5px 10px rgb(210, 210, 210);
-    font-size: 16px;
+    color: rgb(255, 142, 0);
+    background-color: rgb(255, 250, 237);
+    font-size: 1rem;
+    border: 0.1rem solid rgb(255, 142, 0);
 }
 
-#logo {
+.logo {
     width: 7%;
     min-width: 100px;
 }
 
-#nav-bar {
-    font-size: 1em;
+.header-footer-links {
+    font-size: 1.25rem;
     display: flex;
-    gap: 1rem;
+    gap: 4rem;
     margin-left: auto;
-    margin-right: 2rem;
+    margin-right: 4rem;
 }
 
-a {
+.header-footer-links a {
     color: inherit;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
-a:hover {
+.header-footer-links a:hover {
     color: rgb(64, 64, 64);
     cursor: pointer;
   }
 
-#our-mission-nav {
-    height: 100px;
+#hero-image {
+    width: 100%;
+    filter: grayscale(70%);
 }
 
-#our-mission {
-    display: flex;
-    justify-content: space-evenly;
-    margin: 20px;
-    box-shadow: 5px 5px 10px rgb(170, 170, 170);
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('images/bowl.png');
-    background-size: cover;
-    font-size: 24px;
-    color:rgb(255, 250, 237);
-}
-
-#our-mission-content > h2{
-    margin-top: 50px;
-}
-
-#our-mission-content {
-    width: 80%;
-}
-
-#our-mission-text {
-    margin-top: 50px;
-    font-size: 0.75em;
-}
-
-#our-mission-footer {
-    margin: 50px 0;
-}
-
-#who-we-are-nav {
-    height: 75px;
-}
-
-#who-we-are {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 20px;
-    font-size: 24px;
+#hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 250, 237, 0.7);
     color: rgb(64, 64, 64);
-    background-color:rgb(255, 250, 237);
-    box-shadow: 5px 5px 10px rgb(170, 170, 170);
-}
-
-#pyramid-div {
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    justify-content: center;
-}
-
-#pyramid {
-    width: 50%;
-    min-width: 200px;
-}
-
-#who-we-are-content {
-    width: 80%;
-    padding: 20px;
-}
-
-#who-we-are-text {
-    margin-top: 50px;
-    font-size: 0.75em;
-}
-
-#get-involved-nav {
-    height: 75px;
-}
-
-#get-involved {
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 20px;
-    margin-bottom: 75px;;
-    font-size: 24px;
+    font-size: 2.5rem;
     text-align: center;
-    color: rgb(64, 64, 64);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    border-radius: 10px;
+    gap: 20px;
 }
 
-#get-involved-content {
-    font-size: 1em;
+#hero p {
+    margin: 0;
 }
 
 button {
+    border-radius: 10px;
     color:rgb(255, 250, 237);
     background-color: rgb(255, 142, 0);
     height: 50px;
@@ -136,40 +72,88 @@ button {
     border: 0;
 }
 
-#footer {
-    width: 100%;
-    position: absolute;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-    color: rgb(64, 64, 64);
-    background-color: rgb(234, 226, 205);
+button:hover {
+    background-color: rgb(64, 64, 64);
+    cursor: pointer;
 }
 
-#footer-content {
+#our-mission {
     text-align: center;
+    color:rgb(64, 64, 64);
+    font-size: 2rem;
+    width: 50%;
+    margin: 50px auto;
 }
 
-#footer-logo {
-    width: 7%;
-    min-width: 100px;
-    margin: 25px 0;
+.header {
+    font-size: 1.5rem;
 }
 
-#email-logo {
-    width: 3%;
-    min-width: 50px;
-    margin: 0;
+#our-mission-helper-text {
+    font-size: 1.5rem;
 }
 
-.fade-in-text {
-    animation: fadeIn 2s;
+#our-mission-facts {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1rem;
+}
+#our-mission-facts div {
+    flex: 1;
 }
 
-@keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
+#who-we-are {
+    color: rgb(64, 64, 64);
+    background-color:rgb(255, 250, 237);
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+#who-we-are-content {
+    width: 70%;
+    margin: 0 auto;
+    font-size: 1.5rem;
+}
+
+#profiles-first {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+#profiles-second {
+    display: flex;
+    justify-content: space-around;
+}
+
+#who-we-are img {
+    width: 200px;
+}
+
+#get-involved {
+    margin: 50px auto;
+    text-align: center;
+    color: rgb(64, 64, 64);
+    width: 50%;
+}
+
+#get-involved-text {
+    font-size: 1.5rem;
+}
+
+#footer {
+    background-color: rgb(234, 226, 205);
+    border: 0.1rem solid black;
+}
+
+#footer-links {
+    margin: 0 auto;
+    display: flex;
+}
+
+#footer-links a {
+    display: flex;
 }
 
 @media (prefers-reduced-motion: no-preference) {
