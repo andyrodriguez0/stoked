@@ -206,4 +206,10 @@ button:hover {
     #footer-links {
         margin-top: 20px;
     }
-  }
+}
+
+@media (max-height: 750px) {
+    #hero-content {
+        top: 60%;
+    }
+}
