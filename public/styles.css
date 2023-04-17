@@ -3,6 +3,11 @@ html {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+body {
+    width: 100%;
+    margin: 0;
+}
+
 .header-footer {
     display: flex;
     align-items: center;
@@ -39,6 +44,10 @@ html {
 #hero-image {
     width: 100%;
     filter: grayscale(70%);
+}
+
+#mobile-hero-image {
+    display: none;
 }
 
 #hero-content {
@@ -161,3 +170,40 @@ button:hover {
       scroll-behavior: smooth;
     }
 }
+
+@media (max-width: 500px) {
+    .header-footer, #our-mission-facts, #profiles-first, #profiles-second {
+        flex-direction: column;
+    }
+    #our-mission, #who-we-are-content, #get-involved {
+        width: 90%;
+    }
+    #our-mission-facts {
+        width: 50%;
+        margin: 0 auto;
+    }
+    .header-footer-links {
+        margin: 0;
+        text-align: center;
+        gap: 15px;
+    }
+    #hero-content {
+        width: 70%;
+        font-size: 1rem;
+    }
+    #hero-image {
+        display: none;
+    }
+    #mobile-hero-image {
+        display: block;
+        width: 100%;
+        filter: grayscale(70%);
+    }
+    button {
+        width: 50%;
+        font-size: 0.75rem;;
+    }
+    #footer-links {
+        margin-top: 20px;
+    }
+  }
